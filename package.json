@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "http-server -a localhost -p 8082",
     "test": "codeceptjs run --steps"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "codeceptjs-webdriverio": "^1.1.0",
-    "http-server": "^0.10.0"
+    "codeceptjs-webdriverio": "^1.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
   }
 }
