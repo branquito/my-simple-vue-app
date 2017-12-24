@@ -33,11 +33,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: sudo su -c 'echo "deb http://deb.debian.org/debian jessie-backports main" >> /etc/apt/sources.list'
       - run: |
-          sudo rm -rf /var/lib/apt/lists/*
           sudo apt-get update
-          sudo apt install default-jre
+          sudo apt install openjdk-8-jre
 
       - run:
           name: Download Selenium
