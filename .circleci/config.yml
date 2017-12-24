@@ -37,7 +37,7 @@ jobs:
           sudo apt-get install software-properties-common python-software-properties
           sudo add-apt-repository ppa:webupd8team/java
           sudo apt-get update
-          sudo apt-get install oracle-java9-installer
+          sudo apt-get -y install oracle-java9-installer
 
       - run:
           name: Download Selenium
