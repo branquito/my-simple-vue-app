@@ -34,6 +34,16 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
+          name: Download Selenium
+          command: |
+            curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+      - run:
+          name: Start Selenium
+          command: |
+            java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
+          background: true
+
+      - run:
           name: Running express server...
           command: node app.js
           background: true
