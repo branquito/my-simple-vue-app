@@ -1,0 +1,17 @@
+{
+  "name": "my-simple-vue-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server -a localhost -p 8082",
+    "test": "codeceptjs run --steps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codeceptjs-webdriverio": "^1.1.0",
+    "http-server": "^0.10.0"
+  }
+}
