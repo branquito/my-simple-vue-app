@@ -33,7 +33,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: node app.js
+      - run:
+          name: Running express server...
+          command: node app.js
           background: true
 
       # run tests!
