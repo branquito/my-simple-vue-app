@@ -33,6 +33,10 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      -run:
+        name: Java Runtime
+        command: apt-get install openjdk-9-jre
+
       - run:
           name: Download Selenium
           command: |
