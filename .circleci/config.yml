@@ -34,6 +34,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: node app.js
+        background: true
 
       # run tests!
       - run: npm test
