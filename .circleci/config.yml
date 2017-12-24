@@ -34,8 +34,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: |
+          sudo apt-get install software-properties-common python-software-properties
+          sudo add-apt-repository ppa:webupd8team/java
           sudo apt-get update
-          sudo apt install openjdk-8-jre
+          sudo apt-get install oracle-java9-installer
 
       - run:
           name: Download Selenium
