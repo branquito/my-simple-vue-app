@@ -10,7 +10,7 @@ jobs:
       # - image: circleci/node:9.2
     machine:
       java:
-        version: oraclejdk8
+        version: oraclejdk9
       node:
         version: 9.2
 
