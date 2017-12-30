@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: webpackcontrib/circleci-jdk9-node61
+      - image: webpackcontrib/circleci-jdk9-node6
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
